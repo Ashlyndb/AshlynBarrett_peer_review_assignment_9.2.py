@@ -25,7 +25,7 @@ def chooseCave():
 		print('Which cave will you go into? (1 or 2)')	
 		cave = input()
 		
-	return caves #should say return cave 
+	return caves #return caves should say return cave 
 	
 def checkCave(chosenCave): #(choseCave) not chosencave
 	print('You approach the cave...')
@@ -46,13 +46,13 @@ def checkCave(chosenCave): #(choseCave) not chosencave
 		print 'Gobbles you down in one bite!' #should be print('Gobbles you down in one bite!')
 		
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y': #use playAgain == 'yes' or playAgain == 'y': 
+while playAgain = 'yes' or playAgain = 'y': #use double ==, playAgain == 'yes' or playAgain == 'y': 
 	displayIntro()
-	caveNumber = choosecave() #chooseCave() use correct type case
+	caveNumber = choosecave() #chooseCave() use correct typeCase
 	checkCave(caveNumber)
 	
 	print('Do you want to play again? (yes or no)')
-	playAgain = input() #this should be placed under the if statement print statement
+	playAgain = input() #this function should be placed under the if statement print statement
 	if playAgain == "no": #change "no" to 'no'
 		print("Thanks for planing") #typo change from planing to playing
 		#insert a break
