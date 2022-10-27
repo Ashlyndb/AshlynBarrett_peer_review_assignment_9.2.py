@@ -19,15 +19,15 @@ def displayIntro():
 
 	print()
 	
-def chooseCave():
+def chooseCave(): #chooseCave should be chosenCave
     cave = '' 
-	while cave != '1' and cave != '2': 
+	while cave != '1' and cave != '2': #indentation error and incorrect use of "!=" needs to be "=="
 		print('Which cave will you go into? (1 or 2)')	
 		cave = input()
 		
 	return caves #return caves should say return cave 
 	
-def checkCave(chosenCave): #(choseCave) not chosencave
+def checkCave(chosenCave): 
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
@@ -48,12 +48,10 @@ def checkCave(chosenCave): #(choseCave) not chosencave
 playAgain = 'yes'
 while playAgain = 'yes' or playAgain = 'y': #use double ==, playAgain == 'yes' or playAgain == 'y': 
 	displayIntro()
-	caveNumber = choosecave() #chooseCave() use correct typeCase
+	caveNumber = choosecave() #chooseCave() use correct typeCase and is mis-spelled
 	checkCave(caveNumber)
 	
 	print('Do you want to play again? (yes or no)')
 	playAgain = input() #this function should be placed under the if statement print statement
 	if playAgain == "no": #change "no" to 'no'
 		print("Thanks for planing") #typo change from planing to playing
-		#insert a break
-
